@@ -1,0 +1,33 @@
+.backgroundImage {
+    background-image:url("../assets/img/index-transparent.jpeg");
+    background-color: transparent;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+// MAIN
+.text1{
+    line-height: 1.5;
+    margin: 2.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    & span{
+        color:#000;
+        font-family: 'Catamaran';
+        font-size: 3rem;
+        -webkit-text-stroke:$color1;
+        -webkit-text-stroke-width: 1.5px;
+    }
+        & h2{
+            font-size: 2.5rem;
+            color: $color2;
+            -webkit-text-stroke: #000;
+            -webkit-text-stroke-width: 1.5px;
+            /* text-shadow: 0 0 0.5rem #000; */
+        }
+}

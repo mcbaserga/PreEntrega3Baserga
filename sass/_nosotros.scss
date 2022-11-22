@@ -1,0 +1,19 @@
+#mainNosotros{
+    display: grid;
+}
+
+.imagenesNosotros{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.nosotros1, .nosotros2, .nosotros3{
+    width:100%;
+    height: auto;
+    padding: 1rem;;
+}
+
+.textNosotros{
+    text-align: justify;
+}

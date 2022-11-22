@@ -1,0 +1,313 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Catamaran";
+  src: url(../assets/fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+h1 {
+  color: #A69281;
+  padding: 0.3em;
+  font-size: 1rem;
+}
+
+h2 {
+  color: #A69281;
+  padding: 0.5em;
+  font-size: 0.7rem;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1rem;
+  text-align: justify;
+  padding: 1em;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: transparent;
+}
+
+.logo img {
+  padding-left: 2em;
+  width: 8rem;
+}
+
+.navHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+
+.navHeader li:hover {
+  height: 1.5em;
+  transition: height 1s;
+}
+
+.navHeader li a:hover {
+  height: 1.5em;
+  transition: height 1s;
+  color: #A69151;
+}
+
+.navHeader ul {
+  list-style: none;
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navHeader ul li a {
+  text-decoration: none;
+  color: #000;
+  margin: 20px;
+}
+
+.contactoButton {
+  font-size: 0.9rem;
+  background-color: #dde1d4;
+  border: none;
+  font-weight: 900;
+  padding: 0.5em 0.7em;
+}
+
+.backgroundImage {
+  background-image: url("../assets/img/index-transparent.jpeg");
+  background-color: transparent;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.text1 {
+  line-height: 1.5;
+  margin: 2.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text1 span {
+  color: #000;
+  font-family: "Catamaran";
+  font-size: 3rem;
+  -webkit-text-stroke: #A69281;
+  -webkit-text-stroke-width: 1.5px;
+}
+.text1 h2 {
+  font-size: 2.5rem;
+  color: #A69151;
+  -webkit-text-stroke: #000;
+  -webkit-text-stroke-width: 1.5px;
+  /* text-shadow: 0 0 0.5rem #000; */
+}
+
+.clientesMain {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 1em;
+}
+
+.imgEmpresa1, .imgEmpresa2, .imgEmpresa3 {
+  display: block;
+  margin: auto;
+  padding: 1em;
+  width: 50%;
+  height: auto;
+}
+
+#layoutGrid {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  padding-top: 0.5em;
+  font-weight: 900;
+}
+.formulario label input {
+  font-size: 0.9rem;
+  background-color: #fff;
+  border: none;
+  font-weight: 900;
+  padding: 0.5em 0.7em;
+}
+
+.btn {
+  font-size: 0.9rem;
+  background-color: #dde1d4;
+  border: none;
+  font-weight: 900;
+}
+
+.mapa {
+  height: 75%;
+  width: 100%;
+  padding: 1em;
+}
+
+.juan, .sol {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footer {
+  line-height: 1.5;
+  padding: 1em;
+  font-size: 0.7rem;
+  border-top: #A69151;
+  border-top-width: 0.2em;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.navFooter li {
+  text-decoration: none;
+  color: #000;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  list-style: none;
+  font-size: 0.9rem;
+}
+.navFooter li a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  color: #000;
+}
+.navFooter li a a:hover {
+  color: #A69151;
+}
+
+.contacto {
+  padding-top: 1em;
+  font-size: 0.8rem;
+  text-decoration: none;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  color: #000;
+  text-align: center;
+}
+.contacto a {
+  font-size: 0.8rem;
+  padding: 2em;
+  text-decoration: none;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  color: #A69151;
+}
+.contacto a li a:hover {
+  color: #A69151;
+}
+
+#mainNosotros {
+  display: grid;
+}
+
+.imagenesNosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nosotros1, .nosotros2, .nosotros3 {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.textNosotros {
+  text-align: justify;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #mainNosotros {
+    grid-template-columns: 1fr;
+  }
+  .formulario {
+    padding-top: 5em;
+  }
+  #sectionEquipo {
+    grid-template-columns: 1fr;
+  }
+  #layoutGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #mainNosotros {
+    grid-template-columns: 2fr 1fr;
+  }
+  #sectionEquipo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #mainNosotros {
+    grid-template-columns: 2fr 1fr;
+  }
+  #sectionEquipo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.whatsapp {
+  position: fixed;
+  display: flex;
+  bottom: 1em;
+  right: 1em;
+  background-color: transparent;
+  border: transparent;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
+  align-items: center;
+}
+.social a {
+  width: 30px;
+  padding: 1em;
+}/*# sourceMappingURL=main.css.map */

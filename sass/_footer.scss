@@ -1,0 +1,52 @@
+.footer{
+    line-height: 1.5;
+    padding: 1em;
+    font-size: 0.7rem;
+    border: {
+        top: #A69151;
+        top-width: 0.2em;
+        style: solid;
+        left: none;
+        right: none;
+        bottom: none;
+    }
+}
+
+.navFooter li {
+    text-decoration: none;
+    color: #000;
+    text-decoration-style: none;
+    list-style: none;
+    font-size: 0.9rem;
+    & a{
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        text-decoration-style: none;
+        color:#000;
+            & a:hover {
+                color: #A69151;
+            }
+        }
+}    
+
+.contacto{
+    padding-top: 1em;
+    font-size:0.8rem;
+    text-decoration: none;
+    text-decoration-style: none;
+    color:#000;
+    text-align: center;
+        & a{
+            font-size:0.8rem;
+            padding:2em;
+            text-decoration: none;
+            text-decoration-style: none;
+            color: #A69151;
+            & li a:hover {
+                color: #A69151;
+            }
+        }
+}

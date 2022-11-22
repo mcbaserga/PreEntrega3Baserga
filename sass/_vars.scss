@@ -1,0 +1,48 @@
+// FONTS
+@font-face {
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Catamaran';
+    src: url(../assets/fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
+}
+
+// GENERAL
+$color1:#A69281;
+$color2:#A69151;
+$backgroundColor:#fff;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+h1{
+    color: $color1;
+    padding: 0.3em;
+    font-size: 1rem;
+}
+
+h2{
+    color: $color1;
+    padding: 0.5em;
+    font-size: 0.7rem;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1em;
+}
+
+@mixin btn {
+    font-size: 0.9rem;
+    background-color: #fff;
+    border: none;
+    font-weight: 900;
+}

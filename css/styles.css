@@ -1,0 +1,362 @@
+/* FONTS */
+@font-face {
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Catamaran';
+    src: url(../assets/fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
+}
+
+/* GENERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+h1 , h2{
+    color: #A69281;
+    margin: 1em;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1em;
+}
+
+/* INDEX */
+.backgroundImage {
+    background-image:url("../assets/img/index-transparent.jpg");
+    background-color: transparent;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* HEADER */
+.header{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: transparent;
+}
+
+.logo img{
+    padding-left: 2em;
+    width: 8rem;
+}
+
+.navHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: nowrap;
+}
+
+.navHeader li:hover{
+    height: 1.5em;
+    transition: height 1s;
+}    
+
+.navHeader li a:hover{
+    height: 1.5em;
+    transition: height 1s;
+    color:#A69151;
+}    
+
+.navHeader ul{
+    list-style: none;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navHeader ul li a{
+    text-decoration: none;
+    color: #000;
+    margin: 20px;
+}
+
+.contactoButton{
+    font-size: 0.9rem;
+    background-color: #dde1d4;
+    border: none;
+    font-weight: 900;
+    padding: 0.5em 0.7em;
+}
+
+/* INDEX MAIN */
+.text1{
+    line-height: 1.5;
+    margin: 2.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text1 span{
+    color:#000;
+    font-family: 'Catamaran';
+    font-size: 3rem;
+    -webkit-text-stroke: #A69281;
+    -webkit-text-stroke-width: 1.5px;
+}
+
+.text1 h2{
+    font-size: 2.5rem;
+    color: #A69281;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: 1.5px;
+    /* text-shadow: 0 0 0.5rem #000; */
+}
+
+
+
+/* WHATSAPP ICON */
+.whatsapp{
+    position:fixed;
+    display:flex;
+    bottom: 1em;
+    right: 1em;
+    background-color: transparent;
+    border: transparent;
+}
+
+/* FOOTER */
+.footer{
+    line-height: 1.5;
+    padding: 1em;
+    font-size: 0.7rem;
+    border-top: #A69151;
+    border-top-width: 0.2em;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.navFooter a{
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    text-decoration-style: none;
+    color:#000;
+}
+.navFooter li{
+    text-decoration: none;
+    color: #000;
+    text-decoration-style: none;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.navFooter li:hover{
+    height: 1.5em;
+    transition: height 1s;
+}    
+
+.navFooter li a:hover{
+    height: 1.5em;
+    transition: height 1s;
+    color:#A69151;
+}    
+
+.social{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+.social a{
+    width: 30px;
+    padding: 1em;
+}
+
+.contacto{
+    padding-top: 1em;
+    font-size:0.8rem;
+    text-decoration: none;
+    text-decoration-style: none;
+    color:#000;
+    text-align: center;
+}
+
+.contacto a{
+    font-size:0.8rem;
+    padding:2em;
+    text-decoration: none;
+    text-decoration-style: none;
+    color:#000;
+}
+
+
+/* NOSOTROS */
+#mainNosotros{
+    display: grid;
+}
+
+.imagenesNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    position:sticky;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1em;
+    gap: 1em;
+} 
+
+
+
+
+/* EQUIPO */
+#sectionEquipo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.imgJuan{
+    padding: 1em;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgJuan img{
+    display:block;
+}
+
+.imgSol{
+    padding: 1em;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgSol img{
+    display:block;
+}
+
+
+
+
+/* CONTACTO */
+#layoutGrid{
+    padding:1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.formulario label{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding-top: 0.5em;
+    font-weight: 900;
+}
+
+.formulario input{
+    font-size: 0.9rem;
+    background-color: #dde1d4;
+    border: none;
+    font-weight: 900;
+    padding: 0.5em 0.7em;
+}
+
+.mapa{
+    height: 75%;
+    width: 100%;
+    padding: 1em;
+}
+
+/* CLIENTES */
+.clientesMain{
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 1em;
+}
+
+.imgEmpresa1{
+    display: block;
+    margin: auto;
+    padding:1em;
+}
+.imgEmpresa2{
+    display: block;
+    margin: auto;
+    padding:1em;
+}
+
+.imgEmpresa3{
+    display: block;
+    margin: auto;
+    padding:1em;
+}
+
+
+/* CASOS DE EXITO */
+/* carrousel */
+
+
+/* Responsive mobile-first */
+@media screen and (min-width: 320px) and (max-width: 767px){
+    #mainNosotros{
+        grid-template-columns: 1fr;
+    }
+
+    #sectionEquipo{
+        grid-template-columns: 1fr;
+    }
+    
+    #layoutGrid{
+        grid-template-columns: 1fr;
+    }
+}
+    
+    
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #mainNosotros{
+        grid-template-columns: 2fr 1fr;
+    }
+    #sectionEquipo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
+@media screen and (min-width:1024px){
+    #mainNosotros{
+        grid-template-columns: 2fr 1fr;
+    }
+    #sectionEquipo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
